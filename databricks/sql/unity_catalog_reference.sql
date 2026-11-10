@@ -1,0 +1,5 @@
+-- Reference only. Execute only with separately approved existing-workspace authority.
+-- GRANT USE CATALOG ON CATALOG <catalog> TO `<pipeline-principal>`;
+-- GRANT USE SCHEMA, SELECT, MODIFY ON SCHEMA <catalog>.<schema> TO `<pipeline-principal>`;
+-- GRANT USE CATALOG ON CATALOG <catalog> TO `<analytics-principal>`;
+-- GRANT USE SCHEMA, SELECT ON SCHEMA <catalog>.<gold_schema> TO `<analytics-principal>`;

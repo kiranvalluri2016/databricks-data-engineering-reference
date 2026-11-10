@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    retail_medallion_reference:
+      name: retail-medallion-reference
+      tasks:
+        - task_key: ingest_bronze
+          python_wheel_task: {package_name: data_engineering_reference, entry_point: run_batch}
+        - task_key: apply_silver
+          depends_on: [{task_key: ingest_bronze}]
+          python_wheel_task: {package_name: data_engineering_reference, entry_point: run_batch}
+        - task_key: refresh_gold
+          depends_on: [{task_key: apply_silver}]
+          python_wheel_task: {package_name: data_engineering_reference, entry_point: run_batch}

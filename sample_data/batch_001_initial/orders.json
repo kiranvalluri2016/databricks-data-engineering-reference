@@ -1,0 +1,2 @@
+{"tenant_id":"tenant-a","source_event_id":"evt-100-v1","order_id":"ORD-100","event_version":1,"event_timestamp_utc":"2026-01-01T08:00:00Z","event_type":"UPSERT","customer_id":"c1","product_id":"p1","quantity":2,"unit_price":"10.00","currency":"USD","order_business_date":"2026-01-01"}
+{"tenant_id":"tenant-a","source_event_id":"evt-101-v1","order_id":"ORD-101","event_version":1,"event_timestamp_utc":"2026-01-01T09:00:00Z","event_type":"UPSERT","customer_id":"c2","product_id":"p2","quantity":1,"unit_price":"15.00","currency":"USD","order_business_date":"2026-01-01"}

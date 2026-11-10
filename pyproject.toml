@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "databricks-data-engineering-reference"
+version = "0.1.0"
+description = "Local-first PySpark and Delta Lake retail data engineering reference"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "pyspark==4.1.1",
+  "delta-spark==4.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]
