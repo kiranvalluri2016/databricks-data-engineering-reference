@@ -29,6 +29,12 @@ Batch 001 is initial orders; batch 002 supplies correction and cancellation even
 
 Every Bronze, quarantine, Silver, and Gold record has `tenant_id`. Silver business identity is `(tenant_id, order_id)`, and Gold analytics are tenant filtered. Tests use the same order ID in separate synthetic tenants to prove no cross-tenant merge or aggregation.
 
+## Documentation
+
+- [Architecture and recovery boundaries](docs/architecture.md)
+- [Frozen data contracts](docs/data-contracts.md)
+- [Databricks integration reference contract](databricks/README.md)
+
 ## Boundaries
 
 This repository has no credentials, customer data, cloud provisioning, or deployed Databricks assets. Files under `databricks/` are unexecuted existing-workspace reference contracts only.
